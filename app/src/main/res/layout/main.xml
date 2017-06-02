@@ -1,11 +1,311 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center">
+	android:background="#000000"
+	android:orientation="vertical" >
 
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#222222" >
+		<TextView
+			android:text="Accelerometer"
+			android:layout_weight="1"
+			android:textSize="24dp"
+			android:textColor="#ffff00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:text="Magnetometer"
+			android:layout_weight="1"
+			android:textSize="24dp"
+			android:textColor="#ffff00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="x: "
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/x"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="x: "
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/xm"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="y: "
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/y"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="y: "
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/ym"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="z: "
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/z"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="z: "
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/zm"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:background="#222222" >
+		<TextView
+			android:text="Custom"
+			android:layout_weight="1"
+			android:textSize="24dp"
+			android:textColor="#ffff00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+		<TextView
+			android:text="Built"
+			android:layout_weight="1"
+			android:textSize="24dp"
+			android:textColor="#ffff00"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="pitch: "
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/pitch"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="pitch: "
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/pitch2"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#ff0000"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="roll: "
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/roll"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="roll: "
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/roll2"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#00ff00"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content" >
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="yaw: "
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/yaw"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_weight="1" >
+			<TextView
+				android:text="yaw: "
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+
+			<TextView
+				android:id="@+id/yaw2"
+				android:text="0"
+				android:textSize="30dp"
+				android:textColor="#0000ff"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content" />
+		</LinearLayout>
+	</LinearLayout>
 
 </LinearLayout>
